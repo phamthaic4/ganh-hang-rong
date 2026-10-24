@@ -1,0 +1,9 @@
+- Đọc docs/PLAN.md, mục của mốc được giao, trước khi code.
+- Chỉ làm trong phạm vi mốc. Việc ngoài phạm vi: ghi vào docs/BACKLOG.md, không làm.
+- Không thêm thư viện ngoài danh sách trong PLAN. Cần thêm thì dừng và hỏi.
+- Logic trong src/core (không import Phaser). Dữ liệu trong src/data.
+- Viết test cho mọi công thức. Không sửa test để cho qua.
+- Mỗi file dưới ~300 dòng, tách module thay vì nhồi một file.
+- Không tự suy ra dữ kiện bên ngoài (lịch âm, API của SDK portal). Thiếu thì hỏi.
+- Chạy npm run check trước khi báo xong. Cập nhật CHANGELOG.md.
+- Không dùng thương hiệu hoặc tài sản có bản quyền.

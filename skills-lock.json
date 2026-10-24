@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "game-feel": {
+      "source": "gamedev-skills/awesome-gamedev-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/disciplines/game-feel/SKILL.md",
+      "computedHash": "01752d01f59e08e583b79fa58a247d9b16774fde3d6716f9894f093d1072ee9b"
+    }
+  }
+}
