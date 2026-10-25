@@ -1,5 +1,16 @@
 # Changelog
 
+## M3 — Giao diện tầng 1 (2026-10-25)
+
+- Phaser `Boot → Game` (launch `UI`): canvas 1280×720 FIT, 8 quầy là card chữ nhật có nhãn, chạm để nấu (hoàn thành chu kỳ khi chưa có người phụ, +5% khi có), thanh chu kỳ cho quầy có người phụ, số tiền nhận được bay lên khi chạm (giới hạn 24 text).
+- HUD tiền + thu/giây; nút chọn số lượng ×1/×10/×100/MAX; nút Mở/Mua theo quầy đang chọn (hiện giá, tự tắt khi không đủ tiền); nút Thuê người phụ; nút Tạm dừng (bỏ tính thu nhập trong lúc dừng).
+- Hiển thị cập nhật 10 lần/giây (format Decimal rẻ — không giật khi tiền lớn).
+- Tự lưu mỗi 10 giây, khi đóng tab (beforeunload) và khi ẩn tab (visibilitychange); load save khi mở game.
+- `src/game/store.ts`: cầu nối core ↔ Phaser (không import Phaser); `src/ui/button.ts`: nút dùng chung. Mọi logic vẫn trong `src/core`.
+- Hook kiểm thử `window.__ghr` / `__ghrGame` (đọc state/scene khi smoke-test).
+- Đã kiểm trên trình duyệt: click thật mở quầy + chạm + tạm dừng (phiên foreground); mua/nhãn/giá/×10/người phụ qua method scene; save/load qua reload thật (tiền khôi phục đúng).
+- Ghi chú: input chuột chỉ kiểm được ở phiên trình duyệt còn render (webview nền throttling requestAnimationFrame — đặc thù môi trường test, không phải bug game).
+
 ## M2 — Bộ mô phỏng cân bằng (2026-10-25)
 
 - `tools/sim`: CLI `npm run sim [-- --days N]` — build bằng tsc có sẵn (CommonJS), mô hình người chơi theo PLAN M2: 10 phút đầu chạm 2 lần/giây, sau đó 4 phiên/ngày × 5 phút, mua tham lam (mở quầy → thuê người phụ → rót unit theo payback Δthu/s/đồng).

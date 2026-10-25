@@ -6,6 +6,7 @@ export class BootScene extends Phaser.Scene {
   }
 
   create(): void {
+    // M3 chưa có asset để preload; UI do Game launch sau khi store sẵn sàng.
     this.scene.start('Game')
   }
 }
