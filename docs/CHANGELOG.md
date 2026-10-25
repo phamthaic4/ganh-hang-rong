@@ -1,5 +1,11 @@
 # Changelog
 
+## M2 — Bộ mô phỏng cân bằng (2026-10-25)
+
+- `tools/sim`: CLI `npm run sim [-- --days N]` — build bằng tsc có sẵn (CommonJS), mô hình người chơi theo PLAN M2: 10 phút đầu chạm 2 lần/giây, sau đó 4 phiên/ngày × 5 phút, mua tham lam (mở quầy → thuê người phụ → rót unit theo payback Δthu/s/đồng).
+- Số liệu gốc trong PLAN cho P1 (1e6) đạt sau 1.6 phút — lệch mạnh. Đã tinh chỉnh **chỉ stalls.json** qua 8 vòng chạy sim (không sửa công thức): nâng cost các quầy bậc 3–8, giảm một nửa baseIncome bậc 3–8, tăng growth các quầy đầu.
+- Kết quả cuối: nâng cấp đầu **35 giây** (<60s ✓), người phụ đầu **30 giây** (<3 phút ✓), thu cả lượt 1e6 **11.4 phút** (10–15 phút ✓).
+
 ## M1 — Lõi kinh tế (2026-10-25)
 
 - `src/data/stalls.json`: 8 quầy theo bảng PLAN mục 5.2.

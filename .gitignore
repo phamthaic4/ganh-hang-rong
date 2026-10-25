@@ -1,4 +1,5 @@
 node_modules/
 dist/
+tools/sim/.build/
 *.local
 .DS_Store

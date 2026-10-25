@@ -1,12 +1,12 @@
 {
   "stalls": [
-    { "id": "xoi", "name": "Xôi lạc", "baseCost": 4, "growth": 1.07, "baseIncome": 1, "cycleSec": 1, "helperCost": 50 },
-    { "id": "banhmi", "name": "Bánh mì", "baseCost": 60, "growth": 1.15, "baseIncome": 60, "cycleSec": 3, "helperCost": 1000 },
-    { "id": "che", "name": "Chè", "baseCost": 720, "growth": 1.14, "baseIncome": 540, "cycleSec": 6, "helperCost": 15000 },
-    { "id": "bunrieu", "name": "Bún riêu", "baseCost": 8640, "growth": 1.13, "baseIncome": 4320, "cycleSec": 12, "helperCost": 100000 },
-    { "id": "comtam", "name": "Cơm tấm", "baseCost": 103680, "growth": 1.12, "baseIncome": 51840, "cycleSec": 24, "helperCost": 1200000 },
-    { "id": "pho", "name": "Phở", "baseCost": 1240000, "growth": 1.11, "baseIncome": 622000, "cycleSec": 96, "helperCost": 13000000 },
-    { "id": "buncha", "name": "Bún chả", "baseCost": 14900000, "growth": 1.1, "baseIncome": 7460000, "cycleSec": 384, "helperCost": 140000000 },
-    { "id": "lau", "name": "Lẩu", "baseCost": 179000000, "growth": 1.09, "baseIncome": 89600000, "cycleSec": 1536, "helperCost": 1500000000 }
+    { "id": "xoi", "name": "Xôi lạc", "baseCost": 4, "growth": 1.11, "baseIncome": 1, "cycleSec": 1, "helperCost": 50 },
+    { "id": "banhmi", "name": "Bánh mì", "baseCost": 90, "growth": 1.21, "baseIncome": 60, "cycleSec": 3, "helperCost": 1000 },
+    { "id": "che", "name": "Chè", "baseCost": 35000, "growth": 1.18, "baseIncome": 300, "cycleSec": 6, "helperCost": 15000 },
+    { "id": "bunrieu", "name": "Bún riêu", "baseCost": 300000, "growth": 1.17, "baseIncome": 2200, "cycleSec": 12, "helperCost": 100000 },
+    { "id": "comtam", "name": "Cơm tấm", "baseCost": 3500000, "growth": 1.14, "baseIncome": 26000, "cycleSec": 24, "helperCost": 1200000 },
+    { "id": "pho", "name": "Phở", "baseCost": 60000000, "growth": 1.11, "baseIncome": 310000, "cycleSec": 96, "helperCost": 13000000 },
+    { "id": "buncha", "name": "Bún chả", "baseCost": 600000000, "growth": 1.1, "baseIncome": 3600000, "cycleSec": 384, "helperCost": 140000000 },
+    { "id": "lau", "name": "Lẩu", "baseCost": 12000000000, "growth": 1.09, "baseIncome": 44000000, "cycleSec": 1536, "helperCost": 1500000000 }
   ]
 }
